@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Purchase Successful</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card text-center">
+            <div class="card-body">
+                <h1 class="card-title">Purchase Successful!</h1>
+                <p class="card-text">Thank you for purchasing {{ quantity }} {{ product.name }}(s) for ${{ total_price }}.</p>
+                {% if flag == true %}
+                    <h2 
+                        style="padding: 10px; margin-left: 200px; margin-right: 200px; background-color: lightcyan;"
+                    >{{ flag_content }}</h2>
+                {% endif %}
+                <p>Your remaining balance: ${{ balance }}</p>
+                <a href="{{ url_for('home') }}" class="btn btn-success">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

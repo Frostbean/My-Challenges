@@ -1,0 +1,36 @@
+body {
+    background-color: #ffffff;
+}
+
+h1, h2 {
+    color: #007bb5;
+}
+
+.card {
+    border-radius: 10px;
+    border: 1px solid #b3e5fc;
+}
+
+.btn-primary {
+    background-color: #00bcd4;
+    border-color: #00bcd4;
+}
+
+.btn-primary:hover {
+    background-color: #0097a7;
+    border-color: #007bb5;
+}
+
+.btn-danger {
+    background-color: #f44336;
+    border-color: #f44336;
+}
+
+.btn-danger:disabled {
+    cursor: not-allowed;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: scale-down;
+}
