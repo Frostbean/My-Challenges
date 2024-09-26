@@ -21,7 +21,12 @@ const challenges = [
     }
 ];
 
-const randomNum = Math.floor(Math.random() * 5);
+function newChallenge() {
+    console.log('aaa');
+    randomNum = Math.floor(Math.random() * 5);
+    document.getElementById('cipher').textContent = "Hint: " + challenges[randomNum]['cipher'];
+    document.getElementById('encrypted').textContent = challenges[randomNum]['encrypted'];
+}
 
-document.getElementById('cipher').textContent = "Hint: " + challenges[randomNum]['cipher'];
-document.getElementById('encrypted').textContent = challenges[randomNum]['encrypted'];
+newChallenge()
+
